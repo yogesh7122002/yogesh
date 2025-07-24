@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" data-color-scheme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+    <meta name="description" content="John Doe's modern web developer portfolio. Projects, skills, and experience." />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%2333808d'/%3E%3Ctext x='50' y='60' font-size='48' text-anchor='middle' fill='white' font-family='Arial' dy='.3em'%3EJD%3C/text%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <a href="#home" class="skip-link">Skip to content</a>
+    <!-- Navigation -->
+    <header class="container py-16 flex justify-between items-center">
+      <h1 class="font-bold text-xl">Yog_Codes</h1>
+      <nav>
+        <ul class="flex gap-16" aria-label="Primary Navigation">
+          <li><a href="#home" class="nav-link" data-route="home">Home</a></li>
+          <li><a href="#about" class="nav-link" data-route="about">About</a></li>
+          <li><a href="#projects" class="nav-link" data-route="projects">Projects</a></li>
+        </ul>
+      </nav>
+      <button id="themeToggle" class="btn btn--secondary" aria-label="Toggle theme">
+        Toggle Theme
+      </button>
+    </header>
+
+    <main>
+      <!-- Hero / Home Section -->
+      <section id="home" class="section-home container py-16" data-section>
+        <div class="flex flex-col items-center text-center gap-16">
+          <div class="avatar-placeholder">YC</div>
+          <span class="hero-hi" style="font-size:1.1rem;color:var(--color-text-secondary);margin-bottom:4px;">Hi, I'm</span>
+          <h2 class="text-3xl">Yogesh</h2>
+          <div class="slider-container" style="min-height:2.2em;">
+            <span id="heroSlider" class="font-medium"></span>
+          </div>
+          <p class="max-w-prose">
+            I build performant, accessible web applications with modern
+            JavaScript frameworks and cloud technologies.
+          </p>
+          <div class="flex gap-16">
+            <a href="#projects" class="btn btn--primary nav-link" data-route="projects">See Projects</a>
+            <a href="#about" class="btn btn--outline nav-link" data-route="about">More About Me</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section-about container py-16 hidden" data-section>
+        <h2 class="text-3xl mb-8">About Me</h2>
+        <p class="mb-8">
+          Passionate full-stack developer with experience delivering scalable
+          solutions for startups and agencies alike.
+        </p>
+
+        <!-- Skills -->
+        <h3 class="text-2xl mt-8 mb-8">Skills</h3>
+        <div id="skillsGrid" class="grid-skills"></div>
+
+        <!-- Experience -->
+        <h3 class="text-2xl mt-8 mb-8">Experience</h3>
+        <div id="experienceTimeline" class="timeline"></div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section-projects container py-16 hidden" data-section>
+        <h2 class="text-3xl mb-8">Projects</h2>
+        <div id="projectsGrid" class="grid-projects"></div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="container py-16 text-center">
+      <p>
+        Built with love <a href="https://github.com/yogesh7122002" target="_blank">GitHub</a>
+         <a href="mailto:email@example.com">Contact</a>
+      </p>
+    </footer>
+  </body>
+</html>
