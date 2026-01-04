@@ -69,15 +69,19 @@ const skills = {
 
 const experience = [
   {
-    title: "Jr.Software Developer",
+    title: "Software Developer",
     company: "DataDios Inc.",
     period: "Dec 2024 - Present",
     description: [
-      "Developed and maintained REST APIs in Flask for various modules, enhancing backend reliability and performance. ",
+      "Developed and maintained REST APIs in Flask for various modules, enhancing backend reliability and performance.",
       "Designed and implemented GitHub Actions workflows to automate testing and deployment to AWS-based servers.",
       "Built asynchronous background tasks for data deletion, using threading and job queues to free resources without blocking the user interface.",
       "Integrated user notification system to inform users post completion of background tasks.",
       "Collaborated with cross-functional teams to deliver secure, production-ready features on time.",
+      "Worked on RAG (Retrieval-Augmented Generation) pipelines and integrated Hugging Face models to enable semantic retrieval and contextual generation features.",
+      "Implemented a Cost Dashboard aggregating expenses from multiple data sources, providing reporting and visualization for cost analysis and optimization.",
+      "Developed table and query diff tools for SQL Server, MySQL, and PostgreSQL to detect schema and data changes across environments.",
+      "Resolved bugs, implemented new features, and refactored existing code to improve reliability, performance, and maintainability."
     ],
   },
   {
